@@ -15,7 +15,7 @@ from google.oauth2 import service_account
 
 def ConnectToSheet():
     SCOPES = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
-    SERVICE_ACCOUNT_FILE = r'C:\Users\testingcenter\Documents\LiftingApps\StreamlitApps\func\keys.json'
+    SERVICE_ACCOUNT_FILE = 'keys.json'
     creds = None
     creds = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
     service = build('sheets', 'v4', credentials=creds)
