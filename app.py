@@ -4,10 +4,9 @@ from apps import DailyReport, PeriodReport
 
 from PIL import Image
 
-
 app = MultiApp()
 st.set_page_config(page_title = 'Лебёдки', layout = 'wide', page_icon='🏢')
-image = Image.open(r'C:\Users\testingcenter\Documents\LiftingApps\StreamlitApps\img\ВЦСПС.png')
+image = Image.open(r'img\ВЦСПС.png')
 st.sidebar.image(image)
 
 # Add all your application here
