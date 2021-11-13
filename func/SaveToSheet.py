@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import os
-import gspread
+# import gspread
 import datetime
 import time
 import pytz
