@@ -16,8 +16,8 @@ def app():
 
     Object = st.selectbox("Выбирете ЖК", ["ЖК «120 Квартал»","ЖК «Центральный»"])
 
-    image_1 = Image.open('ЖК 120 квартал.jpg')
-    image_2 = Image.open('ЖК Центральный.jpg')
+    image_1 = Image.open('./img/ЖК 120 квартал.jpg')
+    image_2 = Image.open('./img/ЖК Центральный.jpg')
 
     if Object == "ЖК «120 Квартал»":
         st.image(image_1, width=400)
