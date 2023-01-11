@@ -73,9 +73,9 @@ def app():
 
         col1, col2 = st.columns(2)
         with col1:
-            #fig = px.bar(df2, x=df2.index.get_level_values(0), y=['Спуски','Подъемы'], title="Спуски и Подъемы по дням")
-            #st.plotly_chart(fig, use_container_width=True)
-            st.bar_chart(df2, x=df2.index.get_level_values(0), y=['Спуски','Подъемы'])
+            fig = px.bar(df2, x=df2.index.get_level_values(0), y=['Спуски','Подъемы'], title="Спуски и Подъемы по дням")
+            st.plotly_chart(fig, use_container_width=True)
+            #st.bar_chart(df2, x=df2.index.get_level_values(0), y=['Спуски','Подъемы'])
         with col2:
             fig = px.bar(df2, x=df2.index.get_level_values(0), y=['ЗП', 'Хоз.нужды', 'Утилизация'], title="Расходы по дням")
             st.plotly_chart(fig, use_container_width=True)
