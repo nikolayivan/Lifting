@@ -29,7 +29,7 @@ def app():
 
     col1, col2 = st.columns(2)
     with col1:
-        StartDate = st.date_input("Выбирете начальную дату:", value='2021-01-01')
+        StartDate = st.date_input("Выбирете начальную дату:", value=datetime.datetime('2021-01-01'))
     with col2:
         EndDate = st.date_input("Выбирете конечную дату:", value=datetime.datetime.now(tz))
 
