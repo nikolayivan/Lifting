@@ -8,4 +8,4 @@ Pillow==8.4.0
 plotly==4.12.0
 protobuf==3.19.1
 pytz==2020.1
-streamlit==0.89.0
+streamlit==1.16.0
